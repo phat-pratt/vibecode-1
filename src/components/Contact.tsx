@@ -1,8 +1,8 @@
 import { Container, Typography, Paper, Box, Button } from '@mui/material';
 import { motion } from 'framer-motion';
-import EmailIcon from '@mui/icons-material/Email';
-import PhoneIcon from '@mui/icons-material/Phone';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Contact = () => {
     return (
@@ -26,48 +26,52 @@ const Contact = () => {
                     <Paper elevation={2} sx={{ p: 4 }}>
                         <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
                             <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-                                <EmailIcon color="primary" sx={{ fontSize: 30 }} />
-                                <Box>
-                                    <Typography variant="h6" gutterBottom>
-                                        Email
-                                    </Typography>
-                                    <Button
-                                        href="mailto:jamesgeorgepratt@gmail.com"
-                                        variant="text"
-                                        color="primary"
-                                        sx={{ p: 0 }}
-                                    >
-                                        jamesgeorgepratt@gmail.com
-                                    </Button>
-                                </Box>
-                            </Box>
-
-                            <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-                                <PhoneIcon color="primary" sx={{ fontSize: 30 }} />
-                                <Box>
-                                    <Typography variant="h6" gutterBottom>
-                                        Phone
-                                    </Typography>
-                                    <Button
-                                        href="tel:2035582040"
-                                        variant="text"
-                                        color="primary"
-                                        sx={{ p: 0 }}
-                                    >
-                                        (203) 558-2040
-                                    </Button>
-                                </Box>
-                            </Box>
-
-                            <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
                                 <LocationOnIcon color="primary" sx={{ fontSize: 30 }} />
                                 <Box>
                                     <Typography variant="h6" gutterBottom>
                                         Location
                                     </Typography>
                                     <Typography variant="body1" color="textSecondary">
-                                        77 Park Dr, Boston, MA 02215
+                                        Boston, MA
                                     </Typography>
+                                </Box>
+                            </Box>
+
+                            <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
+                                <LinkedInIcon color="primary" sx={{ fontSize: 30 }} />
+                                <Box>
+                                    <Typography variant="h6" gutterBottom>
+                                        LinkedIn
+                                    </Typography>
+                                    <Button
+                                        href="https://www.linkedin.com/in/james-pratt-0bb62195/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        variant="text"
+                                        color="primary"
+                                        sx={{ p: 0 }}
+                                    >
+                                        Connect on LinkedIn
+                                    </Button>
+                                </Box>
+                            </Box>
+
+                            <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
+                                <GitHubIcon color="primary" sx={{ fontSize: 30 }} />
+                                <Box>
+                                    <Typography variant="h6" gutterBottom>
+                                        GitHub
+                                    </Typography>
+                                    <Button
+                                        href="https://github.com/phat-pratt"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        variant="text"
+                                        color="primary"
+                                        sx={{ p: 0 }}
+                                    >
+                                        View My Projects
+                                    </Button>
                                 </Box>
                             </Box>
                         </Box>
@@ -86,6 +90,7 @@ const Contact = () => {
                     </Typography>
                     <Typography variant="body1" color="textSecondary">
                         I'm always open to discussing new opportunities and interesting projects.
+                        Feel free to reach out through LinkedIn.
                     </Typography>
                 </Box>
             </motion.div>
