@@ -26,7 +26,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Router basename="/vibecode">
+      <Router basename="/vibecode-1">
         <div className="App">
           <Navbar />
           <Routes>
